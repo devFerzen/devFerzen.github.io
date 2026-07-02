@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>devFerzen GitHub Pages</title>
+	<style>
+		:root {
+			--bg: #f1f1f1;
+			--text: #1f2328;
+			--muted: #59636e;
+			--card: #ffffff;
+			--border: #d0d7de;
+			--shadow: 0 16px 40px rgba(31, 35, 40, 0.08);
+		}
+
+		* {
+			box-sizing: border-box;
+		}
+
+		body {
+			margin: 0;
+			min-height: 100vh;
+			font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+			background:
+				radial-gradient(circle at 90% -10%, rgba(31, 35, 40, 0.08) 0%, rgba(31, 35, 40, 0) 40%),
+				linear-gradient(180deg, #f7f7f7 0%, var(--bg) 100%);
+			color: var(--text);
+			display: grid;
+			place-items: center;
+			padding: 24px;
+		}
+
+		.card {
+			width: min(720px, 100%);
+			background: var(--card);
+			border: 1px solid var(--border);
+			border-radius: 18px;
+			box-shadow: var(--shadow);
+			padding: 28px;
+			text-align: center;
+			animation: rise-in 520ms ease both;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: clamp(1.8rem, 3vw, 2.6rem);
+			letter-spacing: 0.02em;
+		}
+
+		p {
+			margin: 12px 0 0;
+			color: var(--muted);
+			font-size: 1.05rem;
+		}
+
+		.hero-image {
+			display: block;
+			width: min(320px, 72vw);
+			aspect-ratio: 1 / 1;
+			object-fit: cover;
+			margin: 24px auto 0;
+			border-radius: 14px;
+			border: 1px solid var(--border);
+			box-shadow: 0 10px 24px rgba(31, 35, 40, 0.14);
+		}
+
+		@keyframes rise-in {
+			from {
+				opacity: 0;
+				transform: translateY(10px);
+			}
+			to {
+				opacity: 1;
+				transform: translateY(0);
+			}
+		}
+	</style>
+</head>
+<body>
+	<main class="card">
+		<h1>devFerzen GitHub Pages</h1>
+		<p>Static dummy base for your future user site.</p>
+		<img
+			class="hero-image"
+			src="https://picsum.photos/600/600"
+			alt="Dummy random placeholder image"
+			loading="lazy"
+			width="600"
+			height="600"
+		/>
+	</main>
+</body>
+</html>
